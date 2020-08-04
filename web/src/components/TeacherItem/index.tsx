@@ -31,15 +31,12 @@ return (
           R$ 80,00
         </strong>
       </p>
-         <button type="button">
+      <button type="button">
            <img src={wats} alt="entrar em contato wats"/>
-           entrar em contato 
-         </button>
-    </footer>
-         
+           Entrar em contato 
+      </button>
+    </footer>         
 </article>
-
-
 
 )
    
