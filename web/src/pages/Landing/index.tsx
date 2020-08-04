@@ -5,6 +5,7 @@ import StudyIcon from '../../assets/images/icons/study.svg';
 import ProfIcon from '../../assets/images/icons/give-classes.svg';
 import PurpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 import './style.css';
+import { Link}  from 'react-router-dom'
 
 
 function landing() {
@@ -19,14 +20,14 @@ function landing() {
                 </div>
                 <img src={Landing} alt="landing" className="hero-image"/>
                 <div className="buttons-container">
-                    <a href="/" className="study">
+                    <Link to="/study" className="study">
                         <img src={StudyIcon} alt="Estudar" />
                         Estudar
-                    </a>
-                    <a href="/" className="give-classes">
+                    </Link>
+                    <Link to="/give-classes" className="give-classes">
                         <img src={ProfIcon} alt="Aula" />
                         Dar Aulas
-                    </a>
+                    </Link>
                 </div>
               <span className="total-connections">
                   Total de  200 conexoes ja realizadas <img src={PurpleHeartIcon} alt="coracao"/>

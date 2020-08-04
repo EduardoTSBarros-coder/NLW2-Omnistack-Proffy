@@ -1,14 +1,38 @@
 import React from 'react';
-
+import './style.css';
+import PageHeader from './../../components/PageHeader/';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList() {
-
     return (
+        <div id="page-teacher-list"  className="container" >
+           <PageHeader title="Estes são os Proffs disponiveis" link="/">
+            <form id="search-teachers" action="">
+                 <div className="input-block">
+                   <label htmlFor="subject">Matérias</label>
+                   <input type="text" id="subject"/>
+                 </div>
 
-        <h1>Teacher</h1>
+                 <div className="input-block">
+                   <label htmlFor="week_day">Dias da Semana</label>
+                   <input type="text" id="week_day"/>
+                 </div>
 
+                 <div className="input-block">
+                   <label htmlFor="time">Horario</label>
+                   <input type="text" id="time"/>
+                 </div>
+            </form>
+           </PageHeader>    
+           <main>             
+              <TeacherItem />
+              <TeacherItem />
+              <TeacherItem />
+              <TeacherItem />
+              <TeacherItem />                                 
+           </main>   
+        </div>
     );
-
 }
 
 

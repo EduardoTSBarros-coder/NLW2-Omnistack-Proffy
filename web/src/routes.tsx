@@ -11,14 +11,12 @@ function Routes() {
 
     return (
         <BrowserRouter>
-
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/study" exact component={TeacherList} />
                 <Route path="/give-classes" exact component={TeacherForm} />
                 <Route component={Erro404} />
             </Switch>
-
         </BrowserRouter>
     );
 
