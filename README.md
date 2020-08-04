@@ -18,6 +18,9 @@
 </p>
   <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/VideoProffyOmni.gif" alt="demo" height="425">
 </div>
+<p />
+<img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/VideoProffyOmniMob.gif" alt="demo" height="425">
+
 <hr />
 
 # 🛠 Tecnologias utilizadas
