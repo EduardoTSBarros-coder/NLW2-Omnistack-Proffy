@@ -9,29 +9,26 @@
 # 🎨 Layout Page
 
 <div>  
-  <img src="https://github.com/EduardoTSBarros-coder/NLW2-Discovery-Proffy/blob/master/images/layouts/Day1.png" alt="demo" height="425">
+  <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/Day1.png" alt="demo" height="425">
  
 </div>
 <div>
   
 ## Screenshots Page
 </p>
+  <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/VideoProffyOmni.gif" alt="demo" height="425">
 </div>
 <hr />
 
 # 🛠 Tecnologias utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias
-## Backend:
 
-
-## Banco de Dados:
-
-## FrontEnd
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://www.javascript.com/)
-
-## Template Engine
+- React
+- TypeScript.
+- Jsx.
 
 # License
 
