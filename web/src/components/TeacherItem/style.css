@@ -18,14 +18,11 @@
         height: 8rem;
         border-radius: 50%;
        
-    }
-    
-    
+    }    
     
     
     .teacher-item header div {
         margin-left: 2.4rem;
-    
     } 
     
     
@@ -69,7 +66,7 @@
     
     
     .teacher-item footer button {
-     width: 20rem;
+     width: 24.5rem;
      height: 5.6rem;
      background: var(--color-secundary);
      color:  var(--color-button-text);
@@ -98,21 +95,30 @@
 }
 
 #teacher-item > p {
+    padding: 0 3.2rem;
 display: initial;
 margin-left: 1.6rem;
 
 
 }
 
-#teacher-item footer button {
- width: 24.5rem;
- font-size: 1.6rem;
- justify-content: center;
-}
+ #teacher-item footer button {
+  width: 24.5rem;
+  font-size: 1.6rem;
+  justify-content: center;
+ }
 
 
 #teacher-item footer button img {
     margin-right: 1.6rem;
 }
+
+
+.teacher-item footer p strong {
+  display: initial;
+  margin-left: 1.6rem;
+}
+
+
 
 }
