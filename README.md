@@ -10,11 +10,18 @@
 
 <div>  
   <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/Day1.png" alt="demo" height="425">
- 
 </div>
 <div>
+ <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/Day1_study.png" alt="demo" height="425">
+</div>
+<div>
+ <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/PageError404.png" alt="demo" height="425">
+</div>
+<hr>
+
+<div>
   
-## Screenshots Page
+## Gif Page Demo
 </p>
   <img src="https://github.com/EduardoTSBarros-coder/NLW2-Omnistack-Proffy/blob/master/web/src/assets/images/VideoProffyOmni.gif" alt="demo" height="425">
 </div>
