@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PageHeader from './../../components/PageHeader/'
 import './style.css';
 import Input from '../../components/Input/index';
@@ -8,12 +8,20 @@ import Select from '../../components/Select';
 
 
 
+
 function TeacherForm() {
 
-  const scheduleItems = [
-    {week_day:0 ,from: '8:00 AM',  to: '4:00 PM' },
-    {week_day:2 ,from: '10:00 AM', to: '6:00 PM' }
-  ]
+  const [scheduleItems,setScheduleItems] = useState( [
+    {week_day:0 ,from: '',  to: '' }
+  ] );
+
+
+   function addNewScheduleItem (){
+      setScheduleItems([
+         ...scheduleItems, {week_day: 0, from: '', to: ''}
+      ]);
+   }
+
 
   return (
 
@@ -45,26 +53,29 @@ function TeacherForm() {
         </fieldset>
         <fieldset>
           <legend>Horarios disponiveis
-            <button type="button">
+            <button type="button" onClick={addNewScheduleItem}>
               + Novo Horario
             </button>
           </legend>
-          <div className="schedule-item">
-            <Select
-              name="subject"
-              label="Materia"
-              options={[
-                { value: 'Artes', label: "Artes" },
-                { value: 'Biologia', label: "Biologia" },
-                { value: 'Matematica', label: "Matematica" },
-                { value: 'Banco de dados', label: "banco de Dados" },
-                { value: 'Logica', label: "Logica" }
-              ]}
-            />
-            <Input name="from" label="Das" type="time" />
-            <Input name="to" label="Ate" type="time" />      
-          
-          </div>
+          {scheduleItems.map(scheduleitem =>{
+             return (
+              <div key={scheduleitem.week_day} className="schedule-item">
+              <Select
+                name="subject"
+                label="Materia"
+                options={[
+                  { value: 'Artes', label: "Artes" },
+                  { value: 'Biologia', label: "Biologia" },
+                  { value: 'Matematica', label: "Matematica" },
+                  { value: 'Banco de dados', label: "banco de Dados" },
+                  { value: 'Logica', label: "Logica" }
+                ]}
+              />
+              <Input name="from" label="Das" type="time" />
+              <Input name="to" label="Ate" type="time" />             
+            </div>
+             )
+          })}
         </fieldset>
         <footer>
           <p>
