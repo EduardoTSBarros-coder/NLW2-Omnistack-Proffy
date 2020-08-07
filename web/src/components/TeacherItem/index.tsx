@@ -1,39 +1,61 @@
 import React from 'react';
 import wats from '../../assets/images/icons/whatsapp.svg';
 import './style.css';
+import api from '../../services/api';
 
 
+export interface Teacher{
+ 
+    avatar: string,
+    bio: string,
+    cost: number,
+    id: number,
+    name:string,
+    subject: string,
+   whatsapp: string;
+ 
+}
 
-function TeacherItem() {
+export interface TeacherItemprops{
+teacher: Teacher
+};
+
+const TeacherItem: React.FC<TeacherItemprops> = ({teacher}) => {
+
+  function createNewConnection() {
+    api.post('connections',{
+     user_id: teacher.id,
+    })
+  }
+
 
 return (
     <article className="teacher-item">
     <header>
-      <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEfNjYDGPlZ_w/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=6uWlmW_5NNeYO76NAehRwgehasbc6_7FesBwofZU0zY" alt=""/>
+      <img src={teacher.avatar} alt={teacher.name} />
       <div>
-        <strong> Eduardo Barros </strong>
-        <span> Novas Tecnologias </span>
+        <strong> {teacher.name} </strong>
+        <span> {teacher.subject} </span>
       </div>
     </header>
     <p>
-      Entusiasta das melhores tecnologias.Apaixonado por descobrir novas tecnologias e tendencias, visando mudar o modo como o mundo real se relaciona com o mundo virtual.
+      {teacher.bio}
     </p>
     <footer>
       <p>
         Preço/Hora
         <strong>
-          R$ 80,00
+          R$ {teacher.cost}
         </strong>
       </p>
-      <button type="button">
-           <img src={wats} alt="entrar em contato wats"/>
+      <a target="_blanck" href={'https://wa.me/${whatsapp}?text=Eu%20tenho%20interesse%20no%20seu%20Curso%20'} onClick={createNewConnection}>
+           <img src={wats} alt="entrar em contato wats"  />
            Entrar em contato 
-      </button>
+      </a>
     </footer>         
 </article>
 
-)
-   
+)  
 
     
 }
