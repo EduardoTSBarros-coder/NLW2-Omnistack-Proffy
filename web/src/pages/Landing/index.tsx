@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/images/logo.svg';
-import Landi from '../../assets/images/landing.svg';
+import Landi from '../../assets/images/landing 1 (2).svg';
 import StudyIcon from '../../assets/images/icons/study.svg';
 import ProfIcon from '../../assets/images/icons/give-classes.svg';
 import PurpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 import './style.css';
-import { Link}  from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import api from '../../services/api';
+import LandingTipe  from '../../components/Svg/Landing/index';
 
 
 function Landing() {
 
     const [totalConnections, setTotalConnections] = useState(1);
-    
+
     useEffect(() => {
-       api.get('connections').then(response => {        
-           const { total } = response.data;                
-           setTotalConnections(total);      
+        api.get('connections').then(response => {
+            const { total } = response.data;
+            setTotalConnections(total);
         })
-    
+
     }, []);
 
     return (
@@ -28,7 +29,7 @@ function Landing() {
                     <img src={Logo} alt="logo" />
                     <h2>Sua plataforma de estudos online</h2>
                 </div>
-                <img src={Landi} alt="landing" className="hero-image"/>
+                 <LandingTipe />
                 <div className="buttons-container">
                     <Link to="/study" className="study">
                         <img src={StudyIcon} alt="Estudar" />
@@ -39,9 +40,9 @@ function Landing() {
                         Dar Aulas
                     </Link>
                 </div>
-              <span className="total-connections">
-                  Total de  {totalConnections} conexoes ja realizadas <img src={PurpleHeartIcon} alt="coracao"/>
-              </span>
+                <span className="total-connections">
+                    Total de  {totalConnections} conexoes ja realizadas <img src={PurpleHeartIcon} alt="coracao" />
+                </span>
             </div>
         </div>
     );

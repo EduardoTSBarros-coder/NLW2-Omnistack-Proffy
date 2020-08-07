@@ -1,0 +1,34 @@
+#time {
+ animation: time 2s ease infinite;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+@keyframes time {
+
+from {
+    transform: rotateZ(0deg);
+}
+to{
+    transform: rotateZ(360deg);
+}
+
+}
+
+
+#engine {
+    animation: engine 2s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+   }
+   
+@keyframes engine {
+   
+ from {
+       transform: rotateZ(0deg);
+ }
+ to{
+     transform: rotateZ(360deg);
+ }
+   
+}
