@@ -1,0 +1,21 @@
+.total-connections g#purple-heart_1 {
+ animation: heart  1s ease infinite;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+@keyframes heart {
+from {
+
+    transform:   scale(1);
+}
+to{
+    transform:  scale(1.08);
+}
+
+}
+
+
+
+
+

@@ -1,4 +1,4 @@
-#time {
+g #time {
  animation: time 2s ease infinite;
  transform-origin: center;
  transform-box: fill-box;
@@ -17,7 +17,7 @@ to{
 
 
 #engine {
-    animation: engine 2s ease infinite;
+    animation: engine 1s ease infinite;
     transform-origin: center;
     transform-box: fill-box;
    }
@@ -25,10 +25,15 @@ to{
 @keyframes engine {
    
  from {
-       transform: rotateZ(0deg);
+       transform: rotateZ(0deg) 
  }
  to{
-     transform: rotateZ(360deg);
+     transform: rotateZ(360deg) 
  }
    
 }
+
+
+
+
+

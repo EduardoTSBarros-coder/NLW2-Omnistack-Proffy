@@ -4,6 +4,7 @@ import Landi from '../../assets/images/landing 1 (2).svg';
 import StudyIcon from '../../assets/images/icons/study.svg';
 import ProfIcon from '../../assets/images/icons/give-classes.svg';
 import PurpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+import PurpleHeart from '../../components/Svg/Purple-heart/index';
 import './style.css';
 import { Link } from 'react-router-dom'
 import api from '../../services/api';
@@ -41,7 +42,7 @@ function Landing() {
                     </Link>
                 </div>
                 <span className="total-connections">
-                    Total de  {totalConnections} conexoes ja realizadas <img src={PurpleHeartIcon} alt="coracao" />
+                    Total de  {totalConnections} conexoes ja realizadas <PurpleHeart />
                 </span>
             </div>
         </div>
